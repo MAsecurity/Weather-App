@@ -1,3 +1,4 @@
+import { fetchRequest } from "../logic/fetch";
 function home() {
   // link font icons
   const linkEl = document.createElement("link");
@@ -14,8 +15,23 @@ function home() {
   wrapper.classList.add("wrapper")
   const input = document.createElement("input");
   input.setAttribute("type","text");
-  input.setAttribute("placeholder", "Enter any city")
-  const button = document.createElement("button")
+  input.setAttribute("placeholder", "Enter any city");
+  const validationDiv = document.createElement("div");
+  validationDiv.setAttribute("id","validation")
+  validationDiv.classList.add("empty");
+  const button = document.createElement("button");
+  button.addEventListener("click",() =>{
+    event.preventDefault();
+    if (!input.value.length){
+      validationDiv.classList.add("active");
+      validationDiv.textContent = "Please enter a city."
+    }else{
+      validationDiv.classList.remove("active");
+      validationDiv.textContent = "";
+      fetchRequest(input.value)
+    }
+    
+  })
   const spanSearchIconContainer = document.createElement("span");
   spanSearchIconContainer.classList.add("material-symbols-outlined");
   spanSearchIconContainer.textContent = 'search'
@@ -32,6 +48,7 @@ function home() {
   navSearchContainer.appendChild(form)
   form.appendChild(wrapper);
   wrapper.appendChild(input);
+  wrapper.appendChild(validationDiv)
   wrapper.appendChild(button);
   button.appendChild(spanSearchIconContainer)
   mainContent.appendChild(weatherInfoSectionOne);

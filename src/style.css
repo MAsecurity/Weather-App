@@ -39,9 +39,23 @@ input{
   padding-left: 10px;
   font-size: 16px;
 }
-input::placeholder{
+.empty{
+  height:0px;
+  padding:0px;
+  font-size: 0px;
+}
+.active{
+  height: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
   color: rgb(221, 221, 221);
 }
+
+input::placeholder{
+  color: rgba(221, 221, 221,0.8);
+}
+
 button{
   height: 24px;
   width: 32px;
