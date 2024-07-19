@@ -24,7 +24,7 @@ function home() {
     event.preventDefault();
     if (!input.value.length){
       validationDiv.classList.add("active");
-      validationDiv.textContent = "Please enter a city."
+      validationDiv.textContent = "Please enter a city"
     }else{
       validationDiv.classList.remove("active");
       validationDiv.textContent = "";

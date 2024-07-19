@@ -7,7 +7,7 @@
 }
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
+  'FILL' 1,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
@@ -45,8 +45,8 @@ input{
   font-size: 0px;
 }
 .active{
-  height: 32px;
-  font-size: 24px;
+  height: 24px;
+  font-size: 16px;
   font-weight: bold;
   padding-left: 10px;
   color: rgb(221, 221, 221);
@@ -73,4 +73,55 @@ button span:hover{
 }
 button span{
   color: rgb(221, 221, 221);
+}
+.weather-info-section-one{
+  padding-left: 20%;
+  padding-top: 20px;
+}
+.weather-summary{
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+}
+.weather-summary-section-one{
+  display: flex;
+  gap: 5px;
+}
+.date-section{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.today{
+  color: rgb(221, 221, 221);
+  font-size: 24px;
+  font-weight: bold;
+}
+.todays-date {
+  font-size: 16px;
+  color: rgba(221, 221, 221,0.8);
+}
+.icon-section img{
+  height: 80px;
+  width: auto;
+}
+.temp-section{
+  display: flex;
+  align-items: center;
+}
+.temp-degrees{
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(221, 221, 221);
+}
+.location-section{
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+.location-section span,.actual-location{
+  font-size: 16px;
+  color: rgb(221, 221, 221);
+}
+.actual-location{
+  font-weight: bold;
 }

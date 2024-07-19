@@ -4,6 +4,7 @@ function dates(date){
   ]
   dates.push(new Date(date));
   let currentDate = dates.sort(compareAsc);
-  return currentDate;
+  let splitDates = ""+currentDate;
+  return splitDates.split(" ").slice(0,3).join(" ")
 }
 export{dates}
