@@ -1,4 +1,7 @@
 import { weatherSummary } from "../DOM/weatherSummary";
+import { weatherDetails } from "../DOM/weatherDetails";
+import { clearSummary } from "../DOM/clearDom";
+import { clearDetails } from "../DOM/clearDom";
 async function fetchRequest(input) {
   const validationBox = document.querySelector("#validation");
   try {
@@ -16,10 +19,13 @@ async function fetchRequest(input) {
         validationBox.classList.remove("active");
         validationBox.textContent = "";
       } else {
+        // clear everything
+        clearSummary();
+        clearDetails();
         weatherSummary(weatherData)
+        weatherDetails();
       }
     }
-    console.log(weatherData);
   } catch (error) {
     console.log(error);
   }

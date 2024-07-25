@@ -17,8 +17,8 @@
   background-image: linear-gradient(#14c9cb,#08b3ef);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr 1fr;
-  gap: 8px;
+  grid-template-rows: 80px 1fr 2fr;
+  gap: 15px;
 }
 .nav-container{
   display: flex;
@@ -109,9 +109,10 @@ button span{
   align-items: center;
 }
 .temp-degrees{
-  font-size: 40px;
+  font-size: 72px;
   font-weight: bold;
   color: rgb(221, 221, 221);
+  padding: 10px 30px;
 }
 .location-section{
   display: flex;
@@ -119,9 +120,26 @@ button span{
   align-items: end;
 }
 .location-section span,.actual-location{
-  font-size: 16px;
+  font-size: 24px;
   color: rgb(221, 221, 221);
 }
 .actual-location{
   font-weight: bold;
+}
+.weather-info-section-two{
+  display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.weather-details-container{
+  border-top: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  padding: 1% 5%;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  gap: 5px;
+}
+.weather-details-title{
+  font-size: 24px;
+  color: rgb(221, 221, 221);
 }
