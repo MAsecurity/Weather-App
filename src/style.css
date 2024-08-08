@@ -128,8 +128,8 @@ button span{
 }
 .weather-info-section-two{
   display: flex;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 .weather-details-container{
   border-top: 1px solid rgb(221, 221, 221);
@@ -142,4 +142,41 @@ button span{
 .weather-details-title{
   font-size: 24px;
   color: rgb(221, 221, 221);
+}
+.divs-container{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4,250px);
+  padding-top: 4%;
+}
+.divs-container .wind{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 16px;
+  background-color: rgba(253, 249, 249, 0.7);
+  border: none;
+  border-radius: 3px;
+}
+
+.wind-info{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.wind-title{
+  font-size: 16px;
+  color: gray;
+}
+.wind-mph{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+}
+.wind-icon{
+  padding-left: 24px;
+}
+.wind-icon span{
+  font-size: 32px;
 }

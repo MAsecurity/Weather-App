@@ -22,8 +22,10 @@ async function fetchRequest(input) {
         // clear everything
         clearSummary();
         clearDetails();
+        // update fields
         weatherSummary(weatherData)
-        weatherDetails();
+        weatherDetails(weatherData);
+        console.log(weatherData)
       }
     }
   } catch (error) {
