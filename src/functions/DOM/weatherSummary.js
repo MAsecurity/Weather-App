@@ -26,7 +26,7 @@ function weatherSummary(data){
   summarySectionTwo.classList.add("temp-section");
   const tempDegrees = document.createElement("div");
   tempDegrees.classList.add("temp-degrees")
-  tempDegrees.textContent = `${weatherInfo.current.temp_c}°`
+  tempDegrees.textContent = `${weatherInfo.current.temp_c} °C`
   // location section
   const summarySectionThree = document.createElement("div")
   summarySectionThree.classList.add("location-section")

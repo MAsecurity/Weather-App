@@ -145,11 +145,11 @@ button span{
 }
 .divs-container{
   display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(4,250px);
-  padding-top: 4%;
+  gap: 16px;
+  grid-template-columns: repeat(4,1fr);
+  /* padding-top: 4%; */
 }
-.divs-container .wind{
+.divs-container .wind,.divs-container .humidity,.divs-container .feels-like,.divs-container .visibility{
   height: 120px;
   display: flex;
   align-items: center;
@@ -159,24 +159,27 @@ button span{
   border: none;
   border-radius: 3px;
 }
-
-.wind-info{
+.wind-info,.humidity-info,.feels-like-info,.visibility-info{
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 2px;
 }
-.wind-title{
+.wind-title,.humidity-title,.feels-like-title,.visibility-title{
   font-size: 16px;
   color: gray;
 }
-.wind-mph{
+.wind-mph,.humidity-percentage,.feels-like-deg,.visibility-km{
   font-size: 24px;
   font-weight: bold;
   color: rgb(39, 39, 39);
 }
-.wind-icon{
+.wind-icon,.humidity-icon,.feels-like-icon,.visibility-icon{
   padding-left: 24px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: end;
 }
-.wind-icon span{
+.wind-icon span,.humidity-icon span,.feels-like-icon span,.visibility-icon span{
   font-size: 32px;
 }
