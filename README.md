@@ -10,6 +10,7 @@ Users can use this project to look for global weather conditions. Using HTML, CS
 - APIs
 - Fetch
 - Async and Await
+- animation and keyframes
 
 
 ## Dependencies
