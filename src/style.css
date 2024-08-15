@@ -1,37 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Roboto,'sans-serif';
+  font-family: Roboto, "sans-serif";
 }
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
-.content{
+.content {
   min-height: 100vh;
-  background-image: linear-gradient(#14c9cb,#08b3ef);
+  background-image: linear-gradient(#14c9cb, #08b3ef);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr 2fr;
   gap: 15px;
 }
-.nav-container{
+.nav-container {
   display: flex;
   align-items: center;
   padding-left: 16%;
 }
-.wrapper{
+.wrapper {
   position: relative;
 }
-input{
+input {
   height: 24px;
   width: 800px;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255, 255, 255, 0);
   outline: none;
   border: none;
   border-bottom: solid 1px rgb(221, 221, 221);
@@ -39,12 +39,12 @@ input{
   padding-left: 10px;
   font-size: 16px;
 }
-.empty{
-  height:0px;
-  padding:0px;
+.empty {
+  height: 0px;
+  padding: 0px;
   font-size: 0px;
 }
-.active{
+.active {
   height: 24px;
   font-size: 16px;
   font-weight: bold;
@@ -52,14 +52,14 @@ input{
   color: rgb(221, 221, 221);
 }
 
-input::placeholder{
-  color: rgba(221, 221, 221,0.8);
+input::placeholder {
+  color: rgba(221, 221, 221, 0.8);
 }
 
-button{
+button {
   height: 24px;
   width: 32px;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
   position: absolute;
   top: 0;
@@ -68,70 +68,71 @@ button{
   justify-content: center;
   cursor: pointer;
 }
-button span:hover{
+button span:hover {
   color: #08b3ef;
 }
-button span{
+button span {
   color: rgb(221, 221, 221);
 }
-.weather-info-section-one{
+.weather-info-section-one {
   padding-left: 20%;
   padding-top: 20px;
 }
-.weather-summary{
+.weather-summary {
   display: grid;
   grid-template-rows: 80px 1fr 80px;
 }
-.weather-summary-section-one{
+.weather-summary-section-one {
   display: flex;
   gap: 5px;
 }
-.date-section{
+.date-section {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.today{
+.today {
   color: rgb(221, 221, 221);
   font-size: 24px;
   font-weight: bold;
 }
 .todays-date {
   font-size: 16px;
-  color: rgba(221, 221, 221,0.8);
+  color: rgba(221, 221, 221, 0.8);
 }
-.icon-section img{
+.icon-section img {
   height: 80px;
   width: auto;
 }
-.temp-section{
+.temp-section {
   display: flex;
   align-items: center;
 }
-.temp-degrees{
+.temp-degrees {
   font-size: 72px;
   font-weight: bold;
   color: rgb(221, 221, 221);
   padding: 10px 30px;
 }
-.location-section{
+.location-section {
   display: flex;
   gap: 5px;
   align-items: end;
 }
-.location-section span,.actual-location{
+.location-section span,
+.actual-location {
   font-size: 24px;
   color: rgb(221, 221, 221);
 }
-.actual-location{
+.actual-location {
   font-weight: bold;
 }
-.weather-info-section-two{
+.weather-info-section-two {
   display: flex;
   padding-right: 8%;
   padding-left: 8%;
 }
-.weather-details-container{
+.weather-details-container {
   border-top: 1px solid rgb(221, 221, 221);
   width: 100%;
   padding: 1% 5%;
@@ -139,17 +140,20 @@ button span{
   grid-template-rows: 80px 1fr;
   gap: 5px;
 }
-.weather-details-title{
+.weather-details-title {
   font-size: 24px;
   color: rgb(221, 221, 221);
 }
-.divs-container{
+.divs-container {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* padding-top: 4%; */
 }
-.divs-container .wind,.divs-container .humidity,.divs-container .feels-like,.divs-container .visibility{
+.divs-container .wind,
+.divs-container .humidity,
+.divs-container .feels-like,
+.divs-container .visibility {
   height: 120px;
   display: flex;
   align-items: center;
@@ -159,31 +163,46 @@ button span{
   border: none;
   border-radius: 3px;
 }
-.wind-info,.humidity-info,.feels-like-info,.visibility-info{
+.wind-info,
+.humidity-info,
+.feels-like-info,
+.visibility-info {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 2px;
 }
-.wind-title,.humidity-title,.feels-like-title,.visibility-title{
+.wind-title,
+.humidity-title,
+.feels-like-title,
+.visibility-title {
   font-size: 16px;
   color: gray;
 }
-.wind-mph,.humidity-percentage,.feels-like-deg,.visibility-km{
+.wind-mph,
+.humidity-percentage,
+.feels-like-deg,
+.visibility-km {
   font-size: 24px;
   font-weight: bold;
   color: rgb(39, 39, 39);
 }
-.wind-icon,.humidity-icon,.feels-like-icon,.visibility-icon{
+.wind-icon,
+.humidity-icon,
+.feels-like-icon,
+.visibility-icon {
   padding-left: 24px;
   /* width: 100%; */
   display: flex;
   justify-content: end;
 }
-.wind-icon span,.humidity-icon span,.feels-like-icon span,.visibility-icon span{
+.wind-icon span,
+.humidity-icon span,
+.feels-like-icon span,
+.visibility-icon span {
   font-size: 32px;
 }
-.remove-loader{
+.remove-loader {
   position: absolute;
   pointer-events: none;
   top: 30%;
@@ -192,7 +211,7 @@ button span{
   width: 0px;
   height: 0px;
 }
-.loader{
+.loader {
   opacity: 1;
   position: absolute;
   top: 30%;
@@ -200,11 +219,15 @@ button span{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 20px solid #EAF0F6;
+  border: 20px solid #eaf0f6;
   border-top: 20px solid rgb(39, 39, 39);
   animation: spinner 4s linear infinite;
 }
 @keyframes spinner {
-  0%{transform: rotate(0deg);}
-  100%{transform:  rotate(360deg)};
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

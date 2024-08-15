@@ -1,25 +1,25 @@
-function weatherDetails(weatherData){
+function weatherDetails(weatherData) {
   const mainSection = document.querySelector(".weather-info-section-two");
   const container = document.createElement("div");
   container.classList.add("weather-details-container");
   const title = document.createElement("div");
   title.classList.add("weather-details-title");
-  title.textContent = 'Weather Details';
+  title.textContent = "Weather Details";
   const moreDetailsContainer = document.createElement("div");
   moreDetailsContainer.classList.add("divs-container");
   // wind section
   const wind = document.createElement("div");
-  wind.classList.add("wind")
+  wind.classList.add("wind");
   const windInfo = document.createElement("div");
   windInfo.classList.add("wind-info");
   const windTitle = document.createElement("div");
   windTitle.classList.add("wind-title");
   windTitle.textContent = "WIND";
   const windMph = document.createElement("div");
-  windMph.classList.add("wind-mph")
+  windMph.classList.add("wind-mph");
   windMph.textContent = `${weatherData.current.gust_mph} mp/h`;
   const windIcon = document.createElement("div");
-  windIcon.classList.add("wind-icon")
+  windIcon.classList.add("wind-icon");
   const windIconspan = document.createElement("span");
   windIconspan.classList.add("material-symbols-outlined");
   windIconspan.textContent = "air";
@@ -30,9 +30,9 @@ function weatherDetails(weatherData){
   humidityInfo.classList.add("humidity-info");
   const humidityTitle = document.createElement("div");
   humidityTitle.textContent = "HUMIDITY";
-  humidityTitle.classList.add("humidity-title")
+  humidityTitle.classList.add("humidity-title");
   const humidityPercentage = document.createElement("div");
-  humidityPercentage.classList.add("humidity-percentage")
+  humidityPercentage.classList.add("humidity-percentage");
   humidityPercentage.textContent = `${weatherData.current.humidity}%`;
   const humidityIcon = document.createElement("div");
   humidityIcon.classList.add("humidity-icon");
@@ -70,15 +70,15 @@ function weatherDetails(weatherData){
   visibilityIcon.classList.add("visibility-icon");
   const visibilityIconSpan = document.createElement("span");
   visibilityIconSpan.classList.add("material-symbols-outlined");
-  visibilityIconSpan.textContent = "visibility" 
+  visibilityIconSpan.textContent = "visibility";
   // Add to DOM
   mainSection.appendChild(container);
   container.appendChild(title);
   container.appendChild(moreDetailsContainer);
   moreDetailsContainer.appendChild(wind);
   wind.appendChild(windInfo);
-  windInfo.appendChild(windTitle)
-  windInfo.appendChild(windMph)
+  windInfo.appendChild(windTitle);
+  windInfo.appendChild(windMph);
   wind.appendChild(windIcon);
   windIcon.appendChild(windIconspan);
   moreDetailsContainer.appendChild(humidity);
@@ -100,4 +100,4 @@ function weatherDetails(weatherData){
   visibility.appendChild(visibilityIcon);
   visibilityIcon.appendChild(visibilityIconSpan);
 }
-export {weatherDetails}
+export { weatherDetails };
