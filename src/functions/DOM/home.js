@@ -41,9 +41,13 @@ function home() {
   weatherInfoSectionOne.classList.add("weather-info-section-one")
   const weatherInfoSectionTwo = document.createElement("div");
   weatherInfoSectionTwo.classList.add("weather-info-section-two");
+  // Add loader div
+  const loader = document.createElement("div");
+  loader.classList.add("remove-loader")
   // Add to DOM
   document.head.appendChild(linkEl)
   document.body.appendChild(mainContent);
+  mainContent.appendChild(loader);
   mainContent.appendChild(navSearchContainer);
   navSearchContainer.appendChild(form)
   form.appendChild(wrapper);

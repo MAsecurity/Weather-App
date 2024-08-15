@@ -183,3 +183,28 @@ button span{
 .wind-icon span,.humidity-icon span,.feels-like-icon span,.visibility-icon span{
   font-size: 32px;
 }
+.remove-loader{
+  position: absolute;
+  pointer-events: none;
+  top: 30%;
+  left: 45%;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+.loader{
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid #EAF0F6;
+  border-top: 20px solid rgb(39, 39, 39);
+  animation: spinner 4s linear infinite;
+}
+@keyframes spinner {
+  0%{transform: rotate(0deg);}
+  100%{transform:  rotate(360deg)};
+}
